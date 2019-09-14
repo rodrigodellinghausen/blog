@@ -1,5 +1,5 @@
 create table post (
-        id int PRIMARY KEY,
+        id SERIAL PRIMARY KEY,
         titulo varchar(100) NOT NULL,
         subtitulo varchar(150),
         texto varchar (4000) NOT NULL,
@@ -10,7 +10,7 @@ create table post (
         );
         
  create table comentario (
-        id int PRIMARY KEY,
+        id SERIAL PRIMARY KEY,
         autor varchar (35) NOT NULL,
         texto varchar (350) NOT NULL,
         data_coment timestamp NOT NULL, 
